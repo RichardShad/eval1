@@ -1,0 +1,9 @@
+(executable
+ (public_name eval1)
+ (name main)
+ (libraries eval1))
+
+(ocamllex lexer)
+
+(menhir 
+ (modules parser))

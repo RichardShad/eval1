@@ -1,0 +1,16 @@
+type token =
+    RPARAN
+  | LPARAN
+  | LAMBDA
+  | INT of int
+  | IDENTITY of string
+  | EOF
+  | DOT
+val menhir_begin_marker : int
+val xv_term : Ast.expr
+val xv_sub_expr : Ast.expr
+val xv_prog : Ast.expr
+val xv_expr : Ast.expr
+val xv_app : Ast.expr
+val xv_abstr : Ast.expr
+val menhir_end_marker : int
